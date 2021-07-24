@@ -1,4 +1,5 @@
-num = 10
+import groovy.transform.Field
+@Field def num = 10
 
 def call() {
   println(globalVars.msg1)
