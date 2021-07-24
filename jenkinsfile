@@ -17,7 +17,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    utils = load 'src/lib_functions.groovy'
+                    utils = load 'src/constants.groovy'
                     println(msg1)
                     println(msg2)
                     printMessage.display()
