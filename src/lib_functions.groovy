@@ -1,4 +1,3 @@
-def display() {
-    println(printMessage.msg1, printMessage.msg2)
-}
+msg1 = "hi"
+msg2 = "hell0"
 return this;
