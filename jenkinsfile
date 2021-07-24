@@ -16,9 +16,9 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    util = load 'src/globalVars.groovy'
-                    println(messageText)
-                    printMessage()
+                    //util = load 'src/globalVars.groovy'
+                    println(message)
+                    //printMessage()
                 }
             }
         }
