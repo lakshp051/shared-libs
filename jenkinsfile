@@ -17,9 +17,8 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    utils = load 'src/constants.groovy'
-                    println(msg1)
-                    println(msg2)
+                    println(globalVars.msg1)
+                    println(globalVars.msg2)
                     printMessage.display()
                 }
             }
