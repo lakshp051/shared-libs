@@ -1,2 +1,2 @@
-msg1 = "hi"
-msg2 = "hell0"
+def msg1 = "hi"
+def msg2 = "hell0"
