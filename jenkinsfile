@@ -1,0 +1,25 @@
+library identifier: "sharedlibs-jenkins@master",
+        retriever: modernSCM(
+            [
+                $class: 'GitSCMSource',
+                remote: "https://github.com/lakshp051/shared_libs.git"
+            ]
+        )
+
+pipeline {
+    
+    agent {
+        label 'local'
+    }
+    
+    stages {
+        stage('Build') {
+            steps {
+                script {
+                    util = load 'shared_libs/src/globalVars.groovy'
+                    printMessage()
+                }
+            }
+        }
+    }
+}
