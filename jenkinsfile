@@ -19,7 +19,10 @@ pipeline {
                 script {
                     println(globalVars.msg1)
                     println(globalVars.msg2)
-                    printMessage.display()
+                    printMessage()
+                    println(globalVars.dir)
+                    displayMsg()
+                    println(globalVars.dir)
                 }
             }
         }
