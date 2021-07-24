@@ -1,3 +1,2 @@
-@groovy.transform.Field
-def messageText = "Hello world from globalVars"
+messageText = "Hello world from globalVars"
 userName = "Jen K"
