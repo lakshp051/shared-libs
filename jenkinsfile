@@ -20,7 +20,9 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    println(printMessage.msg)
+                    utils = load src/
+                    println(printMessage.msg1)
+                    println(printMessage.msg2)
                 }
             }
         }
