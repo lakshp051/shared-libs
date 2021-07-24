@@ -9,7 +9,6 @@ lib = library(identifier: "com-lp-jenkin@master",
     )
 }
 
-def ll = lib.com.lp.jenkins.jenkinsTools.new()
 
 pipeline {
     
@@ -21,7 +20,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    println(ll.message)
+                    println()
                 }
             }
         }
