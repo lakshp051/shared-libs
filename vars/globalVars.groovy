@@ -1,3 +1,5 @@
-msg1 = "hi"
-msg2 = "hell0"
-dir = "${WORKSPACE}"
+import groovy.transform.Field
+
+@Field msg1 = "hi"
+@Field msg2 = "hell0"
+@Field dir = "${WORKSPACE}"
