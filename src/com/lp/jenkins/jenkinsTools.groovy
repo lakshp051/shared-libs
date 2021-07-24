@@ -2,6 +2,8 @@ package com.lp.jenkins
 
 class jenkinsTools {
     
+    jenkinsTools() {}
+    
     String message = "helllloooo"
     
     def displayMessage() {
