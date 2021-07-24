@@ -23,7 +23,7 @@ pipeline {
                     utils = load 'src/lib_functions.groovy'
                     println(msg1)
                     println(msg2)
-                    utils.display()
+                    printMessage.display()
                 }
             }
         }
