@@ -16,7 +16,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    util = load 'shared_libs/src/globalVars.groovy'
+                    util = load 'src/globalVars.groovy'
                     printMessage()
                 }
             }
