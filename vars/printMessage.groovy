@@ -1,7 +1,8 @@
-def message = "hello"
+@groovy.transform.Field
+def msg1 = "hello"
+def msg2 = "hi"
 
-def msg() {
-    println("Hello World")
-    println("${WORKSPACE}")
-    //println(messageText)
+def printMsg() {
+    println(msg1)
+    println(msg2)
 }
