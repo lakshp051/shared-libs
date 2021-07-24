@@ -1,4 +1,2 @@
-@groovy.transform.Field
-def msg1 = "hi"
-@groovy.transform.Field
-def msg2 = "hell0"
+msg1 = "hi"
+msg2 = "hell0"
