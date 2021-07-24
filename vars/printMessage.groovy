@@ -1,3 +1,3 @@
 def display() {
-  println(msg1)
+  println(globalVars.msg1)
 }
