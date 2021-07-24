@@ -20,9 +20,10 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    utils = load src/
+                    utils = load 'src/lib_functions.groovy'
                     println(printMessage.msg1)
                     println(printMessage.msg2)
+                    utils.
                 }
             }
         }
