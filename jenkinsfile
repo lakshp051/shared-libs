@@ -17,6 +17,7 @@ pipeline {
             steps {
                 script {
                     util = load 'src/globalVars.groovy'
+                    println(messageText)
                     printMessage()
                 }
             }
