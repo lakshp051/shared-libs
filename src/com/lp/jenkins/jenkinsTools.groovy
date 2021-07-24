@@ -1,5 +1,10 @@
 package com.lp.jenkins
 
-def displayMessage() {
-    println("Hello from com.lp.jenkins.jenkinsTools.displayMessage()")
+class jenkinsTools {
+    
+    String message = "helllloooo"
+    
+    def displayMessage() {
+        println("Hello from com.lp.jenkins.jenkinsTools.displayMessage()")
+    }
 }
