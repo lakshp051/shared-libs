@@ -17,12 +17,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    println(globalVars.msg1)
-                    println(globalVars.msg2)
                     printMessage()
-                    println(globalVars.dir)
-                    displayMsg()
-                    println(globalVars.dir)
                 }
             }
         }
