@@ -21,8 +21,8 @@ pipeline {
             steps {
                 script {
                     utils = load 'src/lib_functions.groovy'
-                    println(printMessage.msg1)
-                    println(printMessage.msg2)
+                    println(msg1)
+                    println(msg2)
                     utils.display()
                 }
             }
