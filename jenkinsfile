@@ -6,13 +6,18 @@ library identifier: "com-lp-jenkin@master",
             ]
         )
 
+def localVar = "I'm local"
 
 pipeline {
-    
     agent {
         label 'local'
     }
-    
+    environment {
+        BIN_DIR = "bin"
+    }
+    parameters {
+        string(defaultValue: '/usr/home', name: 'userHome')
+    }
     stages {
         stage('Build') {
             steps {
