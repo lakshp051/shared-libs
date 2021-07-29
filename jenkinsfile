@@ -7,6 +7,7 @@ src = library identifier: "com-lp-jenkin@master",
         )
 
 def lpConstants = src.com.lp.jenkins.Constants.new()
+def showM = src.com.lp.jenkins.showMsg.new()
 
 pipeline {
     agent {
