@@ -1,4 +1,4 @@
-library identifier: "com-lp-jenkin@master",
+src = library identifier: "com-lp-jenkin@master",
         retriever: modernSCM(
             [
                 $class: 'GitSCMSource',
