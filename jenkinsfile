@@ -7,7 +7,7 @@ src = library identifier: "com-lp-jenkin@master",
         )
 
 def lpConstants = src.com.lp.jenkins.Constants.new()
-def showM = src.com.lp.jenkins.showMsg.new()
+def show = src.com.lp.jenkins.showMessage.new()
 
 pipeline {
     agent {
@@ -24,6 +24,7 @@ pipeline {
             steps {
                 script {
                     println(lpConstants.USER_HOME)
+                    show.showMsg()
                     printMessage()
                 }
             }
