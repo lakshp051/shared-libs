@@ -1,13 +1,10 @@
-src = library identifier: "com-lp-jenkin@master",
+library identifier: "com-lp-jenkins@master",
         retriever: modernSCM(
             [
                 $class: 'GitSCMSource',
                 remote: "https://github.com/lakshp051/shared_libs.git"
             ]
         )
-
-def lpConstants = src.com.lp.jenkins.Constants.new()
-def show = src.com.lp.jenkins.showMessage.new()
 
 pipeline {
     agent {
@@ -23,8 +20,8 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    println(lpConstants.USER_HOME)
-                    show.showMsg()
+                    util = load 'src/showMessage.groovy'
+                    util.showMsg()
                     printMessage()
                 }
             }
