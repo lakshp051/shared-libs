@@ -6,7 +6,7 @@ library identifier: "com-lp-jenkin@master",
             ]
         )
 
-def localVar = "I'm local"
+def lpConstants = src.com.lp.jenkins.Constants.new()
 
 pipeline {
     agent {
@@ -22,6 +22,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
+                    println(lpConstants.USER_HOME)
                     printMessage()
                 }
             }
